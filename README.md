@@ -17,7 +17,7 @@ Most yeast genes do not have introns. For the sake of simplicity, we will assume
 100% Credit  
 Check that the sequences do not have premature stop codons. (Hint: the Bio.Seq package has a translate() function that will translate DNA into amino acids “from Bio.Seq import translate”). Make sure you are not looking for a stop codon at the very end of the sequence. If a sequence has multiple premature stop codons, only count it once in the count of sequences with premature stop codons. For any sequence that has a premature stop codon, add to the ID a semicolon followed by “preStop” to tag the sequence. Print the number of sequences that HAVE premature stop codons.   
 (Note: the translate function will give a warning saying that the length of some sequences are not a multiple of three. We obviously know this because we just checked for it in the previous step. The warnings package has a function to ignore warnings:   
-import warnings
+import warnings  
 warnings.simplefilter("ignore", category=Warning)  
 Only include this line in your script AFTER you have done every step of the assignment and checked your solutions, as it will suppress all warnings that the script produces.)
 
